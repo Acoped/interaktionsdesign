@@ -28,11 +28,18 @@
 		</div>
 
 		<div class="container debug">
+			<div class="half center debug">
+				<img height="40px" src="{% static 'search.png' %}"/>
+				<input type="text" name="title" placeholder="Sök efter bild eller tagg" class="vTextField" maxlength="24" required="" id="id_search">
+			</div>
+		</div>
+
+		<div class="container debug">
 
 			<h1 class="upload-title">Uppladdade bilder</h1>
 
 			<div class="container debug">
-				<a class="center btn btn-success" href="{% url 'add_post' %}">Ladda upp &nbsp;&nbsp;&nbsp;<img height="20px" src="{% static 'plus-black-symbol.png' %}"/></a>
+				<a class="half center btn btn-success" href="{% url 'add_post' %}">Ladda upp &nbsp;&nbsp;&nbsp;<img height="20px" src="{% static 'plus-black-symbol.png' %}"/></a>
 				<div style="clear: both;">
 			</div>
 

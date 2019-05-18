@@ -8,7 +8,7 @@ body {
 }
 
 .debug {
-	/* border: 1px solid green;*/
+	/*border: 1px solid green;*/
 }
 
 .right {
@@ -43,7 +43,6 @@ body {
 .center {
 	display: block;
 	margin: 0 auto;
-	width: 50%;
 }
 
 footer {
@@ -116,6 +115,11 @@ input[type=text] {
 .upload-title {
 	text-align: center;
 }
+
+#id_search {
+	margin-left: .5em;
+	width: 85%;
+}
 /* ----- /FRONT PAGE RULES ----- */
 
 /* ----- pad size -ish ----- */
@@ -130,4 +134,7 @@ input[type=text] {
 		width: 30%;
 	}
 
+	.half {
+	width: 50%;
+	}
 }
