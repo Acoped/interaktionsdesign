@@ -29,6 +29,7 @@ body {
 }
 
 #logout-btn {
+	color: black;
 	margin-right: 1em;
 	background-color: white;
 	border: none;
@@ -116,7 +117,6 @@ input[type=text] {
 	text-align: center;
 }
 /* ----- /FRONT PAGE RULES ----- */
-
 
 /* ----- pad size -ish ----- */
 @media only screen and (min-width: 1024px) {
