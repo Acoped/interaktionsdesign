@@ -8,16 +8,16 @@ body {
 }
 
 .debug {
-	/* border: 1px solid green; */
+	/*border: 1px solid green;*/
+}
+
+.right {
+	float: right;
 }
 
 .navbar {
 	color: white;
 	background-color: #3C5A99;
-}
-
-.upload-button {
-	float: right;
 }
 
 .navbar a {
@@ -45,10 +45,6 @@ body {
 	width: 50%;
 }
 
-.upload-button {
-	/* background-color: red; */
-}
-
 footer {
 	color: white;
 	margin-top: 1em;
@@ -61,4 +57,18 @@ footer a {
 
 footer a:hover {
 	color: grey;
+}
+
+input[type=text] {
+	font-size: 1.5em;
+	padding: .5em;
+	width: 100%;
+	height: 2em;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+
+.inputfile {
+	padding: .5em;
+	background-color: lightgrey;
 }
