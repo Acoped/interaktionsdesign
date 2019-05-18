@@ -29,23 +29,24 @@
 
 		<div class="container debug">
 
-			<h1>Django Image Uploading</h1>
+			<h1 class="upload-title">Uppladdade bilder</h1>
 
 
-		
-			<ul>
-			{% for post in object_list %}
-
-			<div class="preview-card">
-				<h2>{{ post.title }}</h2>
-				<div class="photo-area debug">
-					<img src="{{ post.image.url }}" alt="{{ post.title }}" class="debug">
-					<!--<div style="clear: both;"></div>-->
+			<div class="photozone container debug">
+				<ul>
+				{% for post in object_list %}
+				<div class="preview-card">
+					<h2>{{ post.title }}</h2>
+					<div class="photo-area debug">
+						<img src="{{ post.image.url }}" alt="{{ post.title }}" class="debug">
+						<!--<div style="clear: both;"></div>-->
+					</div>
 				</div>
-			</div>
 
-			{% endfor %}
-			</ul>
+				{% endfor %}
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
 
 		</div>
 
