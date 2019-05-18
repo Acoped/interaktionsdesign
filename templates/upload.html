@@ -1,4 +1,3 @@
-<!-- templates/post.html -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
@@ -6,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>Botniabladet</title>		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	
 		{% load static %}
 		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
@@ -21,31 +21,33 @@
 		<div class="navbar debug">
 			<a class="navbar-brand" href="#">Botniabladet</a>
 			<div class="row mr">
-				<p>Inloggad som fNamn eNamn</p>
-				<div class="col-md">
-					<button class="btn btn-danger" type="button" name="button">Logga ut</button>
-				</div>
+				<p id="login-name">fNamn eNamn</p>
+				<button id="logout-btn" class="btn btn-danger" type="button" name="button"><img height="20px" src="{% static 'logout.png' %}"></button>
 			</div>
 		</div>
 	
 		<!-- MAIN CONTENT -->
-	    <div class="container center">
+	    <div class="container card">
 		
-			<div class="container center">
-				<img class="center" height="50%" width="50%" src="https://cdn1.iconfinder.com/data/icons/image-manipulations/100/13-512.png" alt="Ladda upp bilden här">
+			<div class="container debug">
+				<img class="center debug" src="https://cdn1.iconfinder.com/data/icons/image-manipulations/100/13-512.png" alt="Ladda upp bilden här">
 			</div>
 			
 			<!-- FORM -->
-			<div class="container center debug">
+			<div class="container debug">
 				<form method="post" enctype="multipart/form-data">
 					{% csrf_token %}
-					<div class="col-lg-12">
-						<input type="file" name="image" accept="image/*" required id="id_image" class="upload-button">
+					<div class="col-lg-12 debug">
+						<input type="file" name="image" accept="image/*" required id="id_image" class="">
+					</div>
+
+					<div class="container debug">
+						Title: <input type="text" name="title" value="Test" class="vTextField" maxlength="24" required="" id="id_title">
 					</div>
 
 					<!-- LÄGG TILL KATEGORI / LÄGG TILL TAGG -->
 					<!-- ** Behöver skrivas om för att hanteras med django ** -->
-					<div class="container">
+					<div class="container debug">
 						<div class="row">
 							<div class="col-lg-6">
 								<button type="button" class="btn btn-primary" name="button">Lägg till Kategori</button>
@@ -60,13 +62,28 @@
 							</div>
 						</div>
 					</div>
-					
-					<input type="text" name="title" value="Test" class="vTextField" maxlength="24" required="" id="id_title">
-					<button type="submit" class="btn btn-primary">Ladda upp</button>
+
+					<div class="container debug clear">
+						<button type="submit" class="upload-button btn btn-success">Ladda upp</button>
+						<div style="clear: both;"></div>
+					</div>
 				</form>
 			</div>
 
 	    </div>
+
+
+	    <footer class="">
+
+		    <div class="container">
+		    
+		    <p>Copyright 2019 Andreas Kuoppa, Andreas Svensk, Björn Bergdahl, Erik Sandgren och Yasmin Lindholm</p>
+
+		    <div>Icons made by <a href="https://ww<w.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			
+			</div>
+		
+		</footer>
   	</body>
 </html>
 

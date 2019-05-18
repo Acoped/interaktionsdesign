@@ -1,21 +1,64 @@
-/*
-
-.center {
-	display: block;
-	margin: auto;
-	width: 50%;
-	padding: 10px;
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
-button[type=submit] {
-	float:right;
+.card {
+	border: 1px solid lightgrey;
+	box-shadow: 3px 3px grey;
 }
-*/
 
 .debug {
-	border: 1px solid green;
+	/* border: 1px solid green; */
+}
+
+.navbar {
+	color: white;
+	background-color: #3C5A99;
 }
 
 .upload-button {
-	/*background-color: red;*/
+	float: right;
+}
+
+.navbar a {
+	color: white;
+}
+
+#login-name {
+	padding-right: 1em;
+}
+
+#logout-btn {
+	margin-right: 1em;
+	background-color: white;
+	border: none;
+}
+
+.container {
+	margin-top: 1em;
+	padding: .5em;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.upload-button {
+	/* background-color: red; */
+}
+
+footer {
+	color: white;
+	margin-top: 1em;
+	background-color: #3C5A99;
+}
+
+footer a {
+	color: pink;
+}
+
+footer a:hover {
+	color: grey;
 }
