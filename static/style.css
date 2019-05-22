@@ -91,6 +91,10 @@ input[type=text] {
 	box-shadow: 3px 3px grey;
 }
 
+h2 {
+	max-height: 1em;
+}
+
 .photo-area {
 	/*border: 1px solid grey;*/
 	background-color: lightgrey;
